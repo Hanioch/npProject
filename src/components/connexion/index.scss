@@ -1,0 +1,122 @@
+.corpsConnexion{
+    width: 100%;
+    overflow: hidden;
+    height: 84.7vh;
+    background-image: url(../../img/fondConnexion.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    z-index: 0;
+    filter: blur(5px);
+    position: relative;
+    text-align: center;
+}
+
+
+.grandRetourConnexion{
+    position: absolute;
+    z-index: 6;
+    top:  1vh;
+    right: 1%;
+    color: white;
+    background-color: rgba(83, 83, 83, 0.842);
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+
+}
+
+.grandTitreConnexion{
+    position: absolute;
+    z-index: 54;
+    top:  1vh;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    background-color: rgba(83, 83, 83, 0.842);
+    border-radius: 8px;
+    width: 370px;
+    padding-left: 85px;
+
+
+    .titreConnexion{
+        width: 80%;
+    }
+    
+    
+
+}
+
+
+.centreConnexion{
+    position: absolute;
+    z-index: 3;
+    width: 30%;
+    height: 60vh;
+    background-color: rgba(83, 83, 83, 0.842);
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    top: 12vh;
+    color: white;
+    border-radius: 10px;
+
+    .connecter{
+        font-size: 27px;
+    }
+
+    .formulaireConnexion{
+        width: 100%;
+        height: 30vh;
+        .lesLabels{
+            width: 80%;
+            font-size: 25px;
+            .textConnexion{
+                padding-top: 20px
+            }
+            .lesInputs{
+                width: 80%;
+                font-size: 22px;
+                background-color: rgba(83, 83, 83, 0.842);
+                border: solid black 1px;
+                height: 4vh;
+                border-radius: 5px;
+            }
+        }
+        .submitConnexion{
+            margin-top: 5vh;
+            height: 50px;
+            width: 40%;
+            font-size: 22px;
+            background-color: rgba(83, 83, 83, 0.842);
+            border: solid black 1px;
+            color: white;
+            border-radius: 5px;
+        }
+    
+        .submitConnexion:hover{
+            background-color: rgb(53, 53, 53)
+        } 
+    }
+    
+
+
+    .pasdeCompte{
+        margin-top: 90px;
+        font-size: 18px;
+        .linkConnexion{
+            color: white;
+        }
+
+        .linkConnexion:hover{
+            color: black;
+        }
+    }
+}
+
+
+
+
+
+
+

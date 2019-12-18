@@ -1,0 +1,135 @@
+
+
+.corpsInscription{
+    width: 100%;
+    height: 84.7vh;
+    overflow: hidden;
+    position: relative;
+    .petitCorpsInscription{
+        width: 100%;
+        height: 84.7vh;
+        background-image: url(../../img/fondConnexion.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: 0;
+        filter: blur(5px);
+        position: relative;
+        text-align: center;
+    }
+
+.grandRetourInscription{
+    position: absolute;
+    z-index: 6;
+    top:  1vh;
+    right: 1%;
+    color: white;
+    background-color: rgba(83, 83, 83, 0.842);
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+
+}
+
+.grandTitreInscription{
+    position: absolute;
+    z-index: 54;
+    top:  1vh;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    background-color: rgba(83, 83, 83, 0.842);
+    border-radius: 8px;
+    width: 370px;
+    padding-left: 85px;
+
+
+    .titreInscription{
+        width: 80%;
+    }
+    
+    
+
+}
+
+
+.centreInscription{
+    position: absolute;
+    z-index: 3;
+    width: 30%;
+    height: 70vh;
+    background-color: rgba(83, 83, 83, 0.842);
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    top: 12vh;
+    color: white;
+    border-radius: 10px;
+
+    .inscrire{
+        font-size: 27px;
+    }
+
+    .formulaireInscription{
+        width: 100%;
+        height: 40vh;
+        text-align: center;
+        .lesLabels{
+            width: 80%;
+            font-size: 20px;
+            
+            .lesInputs{
+                width: 80%;
+                font-size: 22px;
+                background-color: rgba(83, 83, 83, 0.842);
+                border: solid black 1px;
+                border-radius: 5px;
+            }
+        }
+        .grandMdp{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .mdpCorrect{
+                width: 50%;
+                background-color: green;
+                font-size: 15px;
+                display: none;
+            }
+            .mdpIncorrect{
+                width: 50%;
+                background-color: red;
+                font-size: 15px;
+                display: none;
+    
+            }
+        }
+        .submitInscription{
+            margin-top: 3vh;
+            height: 50px;
+            width: 40%;
+            font-size: 22px;
+            background-color: rgba(83, 83, 83, 0.842);
+            border: solid black 1px;
+            color: white;
+            border-radius: 5px;
+        }
+    
+        .submitInscription:hover{
+            background-color: rgb(53, 53, 53)
+        } 
+    }
+    
+    .dejaCompte{
+        margin-top: 110px;
+        font-size: 18px;
+        .linkInscription{
+            color: white;
+        }
+
+        .linkInscription:hover{
+            color: black;
+        }
+    }
+}
+    
+}

@@ -1,0 +1,11 @@
+.categorie{
+    width:20%;
+    color: white;
+    text-decoration: none;
+    .pdeCategorie{
+        pointer-events: none;
+    }
+}
+.categorie:hover{
+    background-color: rgb(24, 24, 24)
+}
