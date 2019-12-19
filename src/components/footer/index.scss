@@ -8,6 +8,7 @@ footer{
     display: flex;
     justify-content: space-between;
     text-align: center;
+    overflow: hidden;
 
     .gaucheFooter{
         display: flex;
@@ -15,7 +16,7 @@ footer{
         width: 350px;
         text-align: center;
         .logoConnexion{
-            width: 100px;
+            width: 250px;
         }
     }
     .centreFooter{
