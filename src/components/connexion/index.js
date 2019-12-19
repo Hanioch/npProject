@@ -13,7 +13,9 @@ class Connexion extends React.Component {
             password:''
         }
     }
-    connect(){
+    connect(e){
+        e.preventDefault()
+        console.log(this.state)
         fetch('/logIn',
         {
             method:'POST',
@@ -27,23 +29,24 @@ class Connexion extends React.Component {
         .then((res)=>{
             if(res.status ===200){
                 console.log('connecté avec succes',res)
-                return null
-            }else{
-                console.log('email ou mot de passe incorrecte')
-                return null
-            }
-        })
-        .then(data =>{
-            if(data!=null && data !==undefined){
                 this.setState({
                     username:'',
                     status:''
                 })
+                window.location.href = 'http://localhost:3000/accueil/circuits'
+                return null
+            }else if(res.status ===402){
+                console.log(' mot de passe incorrecte')
+                return null
+            }else{
+                console.log('erreur pseudo')
+                return null
             }
         })
+
     }
     render() {
-        
+        console.log(this.state)
         return (
             <React.Fragment>
                 <div className='corpsConnexion'>
@@ -69,7 +72,7 @@ class Connexion extends React.Component {
                             <input type='password' className='lesInputs' onChange={(e)=>this.setState({password:e.target.value})}></input>
                         </label>
                         <br />
-                        <button className='submitConnexion'>Valider</button>
+                        <button className='submitConnexion' onClick={(e)=>this.connect(e)}>Valider</button>
 
                     </form>
                     <p className='pasdeCompte'>pas encore de compte ? <br />

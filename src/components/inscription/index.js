@@ -2,6 +2,7 @@ import React from 'react';
 import './index.scss';
 import Footer from '../footer/index'
 import { Link } from 'react-router-dom'
+let succes = false
 
 class Inscription extends React.Component {
     constructor(){
@@ -12,9 +13,11 @@ class Inscription extends React.Component {
             status:'',
             password:'',
             confirm:'',
-            mail:''
+            mail:'',
+            ok: ''
         }
     }
+    
 
     signIn(e){
         
@@ -32,9 +35,18 @@ class Inscription extends React.Component {
         .then((res)=>{
             if(res.status === 200){
                 console.log('inscrit avec succes',res)
+                this.refs.incorrect.style.display='none'
+                this.refs.correct.style.display='none'
+                this.refs.signInFail.style.display='none'
+                this.refs.signInSuccess.style.display='block'
                 return null
             }else{
                 console.log('email ou mot de passe deja utiliser')
+                this.refs.incorrect.style.display='none'
+                this.refs.correct.style.display='none'
+                this.refs.signInFail.style.display='block'
+                this.refs.signInSuccess.style.display='none'
+
                 return null
             }
         })
@@ -50,23 +62,31 @@ class Inscription extends React.Component {
     }
     componentDidUpdate(prevProps, prevState) {
         
-        if(this.state.confirm !=='' && this.state.password!==''){
-            console.log('je rentre dans le premier if')
-            if(this.state.confirm === this.state.password){
-                console.log('mdp identique')
-                this.refs.incorrect.style.display='none'
-                this.refs.correct.style.display = 'block'
-        }else{
-            console.log('mdp pas identiques')
-            this.refs.correct.style.display='none'
-            this.refs.incorrect.style.display = 'block'
-            }
+            if(this.state.confirm !=='' && this.state.password!==''){
+                console.log('je rentre dans le premier if')
+                if(this.state.confirm === this.state.password){
+                    console.log('mdp identique')
+                    this.refs.incorrect.style.display='none'
+                    this.refs.correct.style.display = 'block'
+                    this.refs.signInFail.style.display='none'
+                    this.refs.signInSuccess.style.display='none'
+    
             }else{
-                this.refs.incorrect.style.display='none'
-                this.refs.correct.style.display = 'none'
-            }
+                console.log('mdp pas identiques')
+                this.refs.correct.style.display='none'
+                this.refs.incorrect.style.display = 'block'
+                }
+                }else{
+                    this.refs.incorrect.style.display='none'
+                    this.refs.correct.style.display = 'none'
+                    this.refs.signInFail.style.display='none'
+                    this.refs.signInSuccess.style.display='none'
+    
+                }
+
     }
 
+    
         
     render() {
 
@@ -115,6 +135,12 @@ class Inscription extends React.Component {
                         <div className='grandMdp'>
                         <p className='mdpIncorrect' ref='incorrect'>les deux mot de passe ne sont  pas identiques!</p>
                         </div>
+                        <div className='grandMdp'>
+                        <p className='succes' ref='signInSuccess'>inscription reussis</p>
+                        </div>
+                        <div className='grandMdp'>
+                        <p className='fail' ref='signInFail'>adresse mail ou pseudo déja utilisé, dommage!</p>
+                        </div>
                         <button className='submitInscription' onClick={(e)=>this.signIn(e)}>Valider</button>
 
                     </form>
@@ -130,6 +156,7 @@ class Inscription extends React.Component {
         );
 
     }
+    
 
 
 }

@@ -102,6 +102,18 @@
                 display: none;
     
             }
+            .succes{
+                width: 70%;
+                background-color: green;
+                font-size: 18px;
+                display:none
+            }
+            .fail{
+                width: 70%;
+                background-color: red;
+                font-size: 18px;
+                display:none
+            }
         }
         .submitInscription{
             margin-top: 3vh;
