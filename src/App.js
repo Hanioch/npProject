@@ -11,10 +11,11 @@ function App() {
   return (
     <BrowserRouter>
     <Switch>
-  <Route  path='/connexion' component={Connexion}/>
-  <Route path='/inscription' component={Inscription}/>
+  <Route exact path='/connexion' component={Connexion}/>
+  <Route exact path='/inscription' component={Inscription}/>
   <Route  path='/accueil/:categorie' component={acceuil}/>
-  <Route path='/acceuil/categorie/:genre' component={acceuil}/>
+  <Route path='/accueill/categorie/:genre' component={acceuil}/>
+  <Route path='/accueiil/categorie/genre/:list' component={acceuil}/>
   <Route path='/404' component={Page404}/>
   </Switch>
 

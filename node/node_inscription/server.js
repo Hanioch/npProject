@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var app = express();
 const server = require('http').createServer(app)
 let status =false
+let ListProduit= ''
 
 //informer express que nous utilisons ses packages
 app.use(session({
@@ -50,7 +51,6 @@ app.post('/logIn', function(request, response) {
     console.log(request.body.password)
 	if (username && password) {
         console.log('pour l instant cv ')
-
         connexion.query(`SELECT * FROM user WHERE username='${username}'`, function(error, results) {
             if (results === undefined) {
                 console.log('rien ne va ')
@@ -90,9 +90,10 @@ app.get('/logout', (req, res) => {
     }
     })
 
-//afficher la  table user
-    connexion.query(`SELECT * FROM user `, function(error, results) {
-        console.log(results)
-    });
+
+
+
+//afficher la  table produit
+
 
 server.listen(8000);
