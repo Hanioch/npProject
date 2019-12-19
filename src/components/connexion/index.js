@@ -77,6 +77,8 @@ class Connexion extends React.Component {
                     </form>
                     <p className='pasdeCompte'>pas encore de compte ? <br />
                     <Link to="/inscription" style={{ textDecoration: 'none' }}><span className='linkConnexion'>cliquez  ici!</span> </Link></p>
+                    <p className='oublie'><Link to="/mdpOublié" style={{ textDecoration: 'none',color:'white' }}>
+                        <span className='linkConnexion'>Mot de passe oublié?</span> </Link></p>
                 </div>
                 <Footer/>
             </React.Fragment>

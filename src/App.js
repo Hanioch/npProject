@@ -5,6 +5,7 @@ import Connexion from './components/connexion/index'
 import Inscription from './components/inscription/index'
 import acceuil from './components/acceuil/index'
 import Page404 from './components/404/index'
+import mdpOublie from './components/mdpOublie/index'
 //  <Route  path='/accueil/:categorie' component={acceuil}/>
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
   <Route path='/accueill/categorie/:genre' component={acceuil}/>
   <Route path='/accueiil/categorie/genre/:list' component={acceuil}/>
   <Route path='/404' component={Page404}/>
+  <Route path='/mdpOublié' component={mdpOublie}/>
+
   </Switch>
 
 </BrowserRouter>
