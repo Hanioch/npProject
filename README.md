@@ -16,7 +16,7 @@ inspirations: Instructables/La fabrique
 
 **Back-end**
 * node
-* SQL
+* MySQL
 
 **API Utilisé**
 * https://openweathermap.org/api
@@ -25,6 +25,23 @@ inspirations: Instructables/La fabrique
 <img src='/src/maquette/categoriepng' >
 <img src='/src/maquette/inscription.png' >
 <img src='/src/maquette/se connecter' >
+
+## objectif du site 
+  **Back-end**
+* Inscription/connexion -- OK
+* droit d'administrateur --NOT
+* forum --NOT
+* commentaires --NOT
+* afficher les  differents produits grâce à la base de données --NOT
+**Front-end**
+* faire le design --ok
+* logo  --ok
+* differentes page  --ok
+* réussi ou erreur lors de la connexion  --not
+* réussi ou erreur de l'inscription   --ok
+* page 404  --ok
+* tout les liens mennent à une page  --not
+
 
 ## Auteurs
 
