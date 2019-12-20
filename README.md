@@ -1,6 +1,6 @@
 # Le panda Bricoleur
 Le panda bricoleur est un site de DIY (do it yourself) fait pour un exercice donné par Becode.
-Ce site est sencé regrouper les fans de cuisine, bricolage et artisanat en tout genre, mettre à disposition un espace commentaire et pouvoir partager ses propres DIY.
+Ce site est censé regrouper les fans de cuisine, bricolage et artisanat en tout genre, mettre à disposition un espace commentaire et pouvoir partager ses propres DIY.
 inspirations: Instructables/La fabrique
 
 **A quoi ça ressemble ?**
@@ -33,15 +33,16 @@ inspirations: Instructables/La fabrique
 * forum --NOT
 * commentaires --NOT
 * afficher les  differents produits grâce à la base de données --NOT
+* ajout de DIY par les membres --NOT
 
 **Front-end**
-* faire le design --ok
-* logo  --ok
-* differentes page  --ok
-* réussi ou erreur lors de la connexion  --not
-* réussi ou erreur de l'inscription   --ok
-* page 404  --ok
-* tout les liens mennent à une page  --not
+* faire le design --OK
+* logo  --OK
+* differentes page  --OK
+* réussi ou erreur lors de la connexion  --NOT
+* réussi ou erreur de l'inscription   --OK
+* page 404  --OK
+* tout les liens mennent à une page  --NOT
 
 
 ## Auteurs
