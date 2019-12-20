@@ -33,6 +33,7 @@ inspirations: Instructables/La fabrique
 * forum --NOT
 * commentaires --NOT
 * afficher les  differents produits grâce à la base de données --NOT
+
 **Front-end**
 * faire le design --ok
 * logo  --ok
