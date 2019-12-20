@@ -13,7 +13,9 @@ class Contenu extends React.Component {
         this.state={
             nav:['apple','arduino','art', 'gadget', 'audio'],
             nav2:['cardboard','papier','porte-feuilles', 'card', 'digital'],
-            nav3:['IPhone-Charger','keyboard','fix-Lightning','charge-station','Blackintosh' ]
+            nav3:['IPhone-Charger','keyboard','fix-Lightning','charge-station','Blackintosh' ],
+            temp:'',
+            weathericon:''
         }
     }
     
